@@ -1,5 +1,9 @@
-import React from "react"
+import React from "react";
 
 export default function Home() {
-  return <div>Portfolio Goes here!</div>
+  return (
+    <>
+      <main>Portfolio In Progress!</main>
+    </>
+  );
 }
