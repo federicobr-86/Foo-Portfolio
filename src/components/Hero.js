@@ -12,9 +12,9 @@ const Hero = () => {
           <div>
             <div className="underline"></div>
             <h1>I'm Federico</h1>
-            <h4>Freelance Frontend Engineer</h4>
+            <h4>Frontend Engineer</h4>
             <Link to="/contact" className="btn">
-              contact me
+              Contact me
             </Link>
             <div className="social-links">
               {socialLinks.map((link) => {

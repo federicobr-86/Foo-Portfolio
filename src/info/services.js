@@ -1,13 +1,13 @@
 const services = [
   {
     id: 1,
-    title: "web development",
-    text: `lorem`,
+    title: "Frontend Web Developer",
+    text: `(Frontend experience)`,
   },
   {
     id: 2,
-    title: "web design",
-    text: `lorem.`,
+    title: "Project Management",
+    text: `(Project Management experience).`,
   },
 ];
 
