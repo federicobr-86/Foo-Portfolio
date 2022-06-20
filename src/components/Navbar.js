@@ -12,7 +12,6 @@ const Navbar = ({ toggleSidebar }) => {
           <a href="/">
             <img src={logo} alt="web dev" />
           </a>
-
           <button type="button" className="toggle-btn" onClick={toggleSidebar}>
             <FaAlignRight />
           </button>
