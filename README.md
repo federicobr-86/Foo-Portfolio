@@ -1,4 +1,3 @@
 <h1 align="center">
-  My Portfolio
+  My Personal Portfolio 
 </h1>
-
