@@ -250,7 +250,7 @@ Navbar
   }
 
   .nav-links a {
-    margin-right: 2rem;
+    margin-right: 1.5rem;
     text-transform: capitalize;
     color: var(--clr-grey-1);
     font-weight: bold;
@@ -269,7 +269,7 @@ Navbar
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1082px) {
   .navbar {
     background: transparent;
   }
@@ -442,7 +442,7 @@ Hero
   margin-top: 1.25rem;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 820px) {
   .hero::before {
     content: "";
     position: absolute;
