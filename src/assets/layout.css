@@ -710,7 +710,8 @@ Projects
   border-radius: var(--radius);
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 0.85rem;
+  font-size: 1rem;
+  font-weight: bold;
 }
 .about-stack span {
   margin-top: 0.5rem;
@@ -845,17 +846,26 @@ About Page
 ===============
 */
 .about-page {
-  padding: 7rem 0;
+  display: grid;
+  place-items: center;
+  padding: 5rem 0;
+  text-align: center;
+
 }
 .about-img {
   margin-bottom: 2rem;
   height: 25rem;
+  position: relative;
+  text-align: center;
+
 }
 .about-img-svg {
   margin-bottom: 2rem;
   height: 25rem;
   width: 100%;
   display: block;
+  text-align: center;
+
 }
 .about-text .section-title {
   margin-bottom: 2rem;
@@ -889,11 +899,16 @@ About Page
 @media screen and (min-width: 992px) {
   .about-center {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    align-items: center;
-    column-gap: 4rem;
+    place-items: center;
+    padding: 5rem 0;
   }
-  .about-img,
+  .about-img {
+
+    max-width: 450px;
+    max-height: 600px;
+
+  }
+
   .about-img-svg {
     grid-column: 1 / span 5;
     margin-bottom: 0;

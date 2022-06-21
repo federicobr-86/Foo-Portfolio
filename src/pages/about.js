@@ -1,20 +1,19 @@
 import React from "react";
 import Title from "../components/Title";
-import aboutImg from "../assets/images/product.svg";
+import aboutImg from "../assets/images/about.jpg";
 
 const About = () => {
   const title = "About me!";
+  const intro =
+    "Highly motivated Engineer with more than 10 years of experience in large scale projects";
 
   return (
     <>
-      <section className="about-page">
-        <div className="section-center about-center">
-          <article className="about-text">
-            <Title title={title} />
-            <img src={aboutImg} alt="about me" className="about-img-svg" />
-            <p>Coming soon!</p>
-            <div className="about-stack">Tech Stack info goes here...</div>
-          </article>
+      <section className="section projects">
+        <div className="section-center projects-center">
+          <Title title={title} />
+          <p>{intro}</p>
+          <img src={aboutImg} alt={title} className="about-img" />
         </div>
       </section>
     </>

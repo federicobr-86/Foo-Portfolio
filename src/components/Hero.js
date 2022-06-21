@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
 import socialLinks from "../info/social_links";
-import heroImg from "../assets/images/programming.svg";
 import { StaticImage } from "gatsby-plugin-image";
 
 const Hero = () => {
@@ -28,12 +27,12 @@ const Hero = () => {
           </div>
         </article>
         <StaticImage
-          src="../assets/images/hero.svg"
+          src="../assets/images/programming.svg"
           alt="portfolio"
           className="hero-img"
           placeholder="blurred"
         />
-        {<img src={heroImg} alt="portfolio" className="hero-img-svg" />}
+        {/* {<img src={heroImg} alt="portfolio" className="hero-img-svg" />} */}
       </section>
     </header>
   );
