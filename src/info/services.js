@@ -6,7 +6,7 @@ const services = [
   },
   {
     id: 2,
-    title: "Project Management",
+    title: "Engineering Project Management",
     text: `(Experience info).`,
   },
 ];
