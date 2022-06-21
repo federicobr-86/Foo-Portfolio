@@ -10,8 +10,8 @@ const About = () => {
         <div className="section-center about-center">
           <article className="about-text">
             <Title title={title} />
-            <p>In progress</p>
-            <div className="about-stack">Tech Stack...</div>
+            <p>Coming soon!</p>
+            <div className="about-stack">Tech Stack info goes here...</div>
           </article>
         </div>
       </section>
