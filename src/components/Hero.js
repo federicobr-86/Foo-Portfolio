@@ -32,7 +32,6 @@ const Hero = () => {
           className="hero-img"
           placeholder="blurred"
         />
-        {/* {<img src={heroImg} alt="portfolio" className="hero-img-svg" />} */}
       </section>
     </header>
   );

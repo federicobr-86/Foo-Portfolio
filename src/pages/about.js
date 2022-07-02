@@ -5,7 +5,10 @@ import aboutImg from "../assets/images/about.jpg";
 const About = () => {
   const title = "About me!";
   const intro =
-    "Highly motivated Engineer with more than 10 years of experience in large scale projects";
+    "Passionate about programming languages and computers since 1995.";
+  const experienced =
+    "Since then, I became a highly motivated engineer with more than 10 years of experience in large scale projects.";
+  const now = "Currently working with mainly with React, Gatsby and CMS.";
 
   return (
     <>
@@ -13,7 +16,9 @@ const About = () => {
         <div className="section-center projects-center">
           <Title title={title} />
           <p>{intro}</p>
+          <p>{experienced}</p>
           <img src={aboutImg} alt={title} className="about-img" />
+          <p>{now}</p>
         </div>
       </section>
     </>
