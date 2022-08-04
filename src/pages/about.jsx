@@ -9,13 +9,13 @@ const About = () => {
 
   return (
     <>
-      <section className="section projects">
-        <div className="section-center projects-center">
+      <section className="section about-page">
+        <div className="section-center about-page">
           <Title title={about_title} />
           <p>{about_intro}</p>
           <p>{about_experience}</p>
-          <img src={aboutImg} alt={title} className="about-img" />
           <p>{about_currently}</p>
+          <img src={aboutImg} alt={title} className="about-img" />
         </div>
       </section>
     </>

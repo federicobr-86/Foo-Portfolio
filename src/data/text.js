@@ -3,12 +3,13 @@
 const text = {
   not_found: "Page not found!",
   go_back: "Let's go back home!",
-  about_title: "About me!",
+  about_title: "About myself!",
   about_intro:
     "Passionate about programming languages and computers since 1995.",
   about_experience:
     "Since then, I became a highly motivated engineer with more than 10 years of experience in large scale projects.",
-  about_currently: "Currently working mainly with React, Gatsby and CMS.",
+  about_currently:
+    "Currently working as a Web Developer with React, Gatsby and Strapi.",
   contact_touch: "Get in touch!",
   contact_submit: "Submit here!",
   links_home: "home",
