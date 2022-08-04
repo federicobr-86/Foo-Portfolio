@@ -1,3 +1,3 @@
 <h1 align="center">
-  My Personal Portfolio 
+  My Frontend Portfolio with some Component Examples.
 </h1>

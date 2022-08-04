@@ -6,13 +6,13 @@ const services = [
     id: 1,
     icon: <FaCode className="service-icon" />,
     title: "Frontend Web Developer",
-    text: ``,
+    text: "JavaScript, React and Gatsby experience",
   },
   {
     id: 2,
     icon: <FaUserTie className="service-icon" />,
     title: "Project Management",
-    text: ``,
+    text: "Experience in Large Scale Projects",
   },
 ];
 
