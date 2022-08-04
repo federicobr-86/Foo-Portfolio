@@ -1,6 +1,6 @@
 import React from "react";
-import links from "../info/links";
-import socialLinks from "../info/social_links";
+import links from "../../info/links";
+import socialLinks from "../../info/social_links";
 import { Link } from "gatsby";
 import { FaTimes } from "react-icons/fa";
 

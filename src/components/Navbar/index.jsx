@@ -1,8 +1,8 @@
 import React from "react";
 import { FaAlignRight } from "react-icons/fa";
-import pageLinks from "../info/links";
+import pageLinks from "../../info/links";
 import { Link } from "gatsby";
-import logo from "../assets/images/logo.svg";
+import logo from "../../assets/images/logo.svg";
 
 const Navbar = ({ toggleSidebar }) => {
   return (

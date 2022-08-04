@@ -1,5 +1,5 @@
 import React from "react";
-import Title from "../components/Title";
+import Title from "../components/Title/index";
 import aboutImg from "../assets/images/about.jpg";
 
 const About = () => {

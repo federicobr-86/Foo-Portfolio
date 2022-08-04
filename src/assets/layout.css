@@ -12,7 +12,7 @@ Variables
   --clr-primary-2: hsl(230, 84%, 25%);
   --clr-primary-3: hsl(230, 81%, 29%);
   --clr-primary-4: hsl(231, 77%, 34%);
-  --clr-primary-5: #536DFE;
+  --clr-primary-5: #536dfe;
   /* lighter shades of primary color */
   --clr-primary-6: hsl(231, 57%, 50%);
   --clr-primary-7: hsl(230, 65%, 59%);
@@ -163,7 +163,7 @@ p {
     width: 95vw;
   }
 }
-/* added during recording */
+
 .underline {
   width: 5rem;
   height: 0.25rem;
@@ -179,7 +179,6 @@ p {
 .bg-grey {
   background: var(--clr-grey-10);
 }
-/* page links */
 
 /* social links */
 .social-links {
@@ -196,10 +195,11 @@ p {
 .social-link:hover {
   color: var(--clr-primary-5);
 }
+
 /*
-=============== 
+
 Navbar
-===============
+
 */
 
 .navbar {
@@ -398,7 +398,7 @@ Sidebar Animation
 
 /*
 =============== 
-Hero
+Hero Section
 ===============
 */
 /* underline added to globals */
@@ -507,6 +507,10 @@ Services
 }
 .service-icon {
   font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.service-title {
+  text-align: center;
   margin-bottom: 1.5rem;
 }
 .service .underline {
@@ -850,14 +854,12 @@ About Page
   place-items: center;
   padding: 5rem 0;
   text-align: center;
-
 }
 .about-img {
   margin-bottom: 2rem;
   height: 25rem;
   position: relative;
   text-align: center;
-
 }
 .about-img-svg {
   margin-bottom: 2rem;
@@ -865,7 +867,6 @@ About Page
   width: 100%;
   display: block;
   text-align: center;
-
 }
 .about-text .section-title {
   margin-bottom: 2rem;
@@ -903,10 +904,8 @@ About Page
     padding: 5rem 0;
   }
   .about-img {
-
     max-width: 450px;
     max-height: 600px;
-
   }
 
   .about-img-svg {

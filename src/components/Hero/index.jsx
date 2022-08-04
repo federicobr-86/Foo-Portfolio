@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
-import socialLinks from "../info/social_links";
 import { StaticImage } from "gatsby-plugin-image";
+import socialLinks from "../../info/social_links";
 
 const Hero = () => {
   return (
@@ -27,7 +27,7 @@ const Hero = () => {
           </div>
         </article>
         <StaticImage
-          src="../assets/images/programming.svg"
+          src="../../assets/images/programming.svg"
           alt="portfolio"
           className="hero-img"
           placeholder="blurred"
