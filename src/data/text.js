@@ -27,6 +27,17 @@ const text = {
   services_url: "/about/",
   social_linkedin: "https://linkedin.com/in/federico-barbagallo",
   social_github: "https://github.com/federicobr-86",
+  skills_stack_title: "Tech skills:",
+  skills_stack_html: "HTML",
+  skills_stack_css: "CSS",
+  skills_stack_js: "JavaScript",
+  skills_stack_react: "React.js",
+  skills_stack_gatsby: "Gatsby",
+  skills_stack_rest: "REST API",
+  skills_stack_cms: "CMS",
+  skills_stack_git: "GIT",
+  skills_stack_scrum: "Scrum",
+  skills_stack_project: "Project Management",
 };
 
 export default text;
