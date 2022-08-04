@@ -1,6 +1,6 @@
 import React from "react";
 import { FaAlignRight } from "react-icons/fa";
-import pageLinks from "../../info/links";
+import pageLinks from "../../data/links";
 import { Link } from "gatsby";
 import logo from "../../assets/images/logo.svg";
 

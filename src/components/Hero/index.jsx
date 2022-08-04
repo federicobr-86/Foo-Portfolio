@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
-import socialLinks from "../../info/social_links";
+import socialLinks from "../../data/social_links";
 
 const Hero = () => {
   return (
