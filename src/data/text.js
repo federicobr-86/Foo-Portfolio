@@ -1,4 +1,5 @@
 //to be added to CMS in the near future.
+
 const text = {
   not_found: "Page not found!",
   go_back: "Let's go back home!",
@@ -10,6 +11,12 @@ const text = {
   about_currently: "Currently working mainly with React, Gatsby and CMS.",
   contact_touch: "Get in touch!",
   contact_submit: "Submit here!",
+  services_web_title: "Frontend Web Developer",
+  services_web_text: "Learn more about my Frontend Experience!",
+  services_project_title: "Project Management",
+  services_project_text:
+    "Solid Experience in Large Scale Engineering Projects!",
+  services_url: "/about/",
 };
 
 export default text;
