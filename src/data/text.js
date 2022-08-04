@@ -39,7 +39,8 @@ const text = {
   skills_stack_git: "GIT",
   skills_stack_scrum: "Scrum",
   skills_stack_project: "Project Management",
-  hero_title: "Hi! I'm Federico",
+  hero_greeting: "Hello!",
+  hero_title: "I'm Federico",
   hero_description: "Frontend Developer",
   hero_contact: "Contact Me!",
 };
