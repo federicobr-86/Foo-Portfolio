@@ -2,18 +2,21 @@ import React from "react";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import social from "../../data/social_links";
+import text from "../../data/text";
 
 const Hero = () => {
+  const { hero_title, hero_description, hero_contact } = text;
+
   return (
     <header className="hero">
       <section className="section-center hero-center">
         <article className="hero-info">
           <div>
             <div className="underline"></div>
-            <h1>Hi! I'm Federico</h1>
-            <h4>Frontend Developer</h4>
+            <h1>{hero_title}</h1>
+            <h4>{hero_description}</h4>
             <Link to="/contact" className="btn">
-              Contact me
+              {hero_contact}
             </Link>
             <div className="social-links">
               {social.map((link) => {
