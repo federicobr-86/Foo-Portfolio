@@ -1,11 +1,14 @@
 import React from "react";
+import text from "../data/text";
 
 const contact = () => {
+  const { contact_touch, contact_submit } = text;
+
   return (
     <>
       <section className="contact-page">
         <article className="contact-form">
-          <h3>get in touch</h3>
+          <h3>{contact_touch}</h3>
           <form>
             <div className="form-group">
               <input
@@ -28,7 +31,7 @@ const contact = () => {
               ></textarea>
             </div>
             <button type="submit" className="submit-btn btn">
-              submit here
+              {contact_submit}
             </button>
           </form>
         </article>
