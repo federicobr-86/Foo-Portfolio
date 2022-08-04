@@ -17,6 +17,8 @@ const text = {
   services_project_text:
     "Solid Experience in Large Scale Engineering Projects!",
   services_url: "/about/",
+  social_linkedin: "https://linkedin.com/in/federico-barbagallo",
+  social_github: "https://github.com/federicobr-86",
 };
 
 export default text;
