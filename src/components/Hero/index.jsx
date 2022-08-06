@@ -1,11 +1,17 @@
 import React from "react";
-import { Link } from "gatsby";
+import LinkButton from "../Buttons/LinkButton";
 import { StaticImage } from "gatsby-plugin-image";
 import SocialLinks from "../Links/SocialLinks";
 import text from "../../data/text";
 
 const Hero = () => {
-  const { hero_greeting, hero_title, hero_description, hero_contact } = text;
+  const {
+    hero_greeting,
+    hero_title,
+    hero_description,
+    hero_contact,
+    links_contact_url,
+  } = text;
 
   return (
     <header className="hero">
@@ -14,9 +20,7 @@ const Hero = () => {
           <h3>{hero_greeting}</h3>
           <h2>{hero_title}</h2>
           <h2>{hero_description}</h2>
-          <Link to="/contact" className="btn">
-            {hero_contact}
-          </Link>
+          <LinkButton text={hero_contact} link={links_contact_url} />
           <div className="hero-centered">
             <div className="hero-social">
               <SocialLinks />
