@@ -1,12 +1,12 @@
 import React from "react";
-import MySkills from "../components/Skills/index";
+import StackList from "../components/StackList";
 
 const experiencePage = () => {
   return (
     <>
       <main>
         <section className="experience-page">
-          <MySkills />
+          <StackList />
         </section>
       </main>
     </>

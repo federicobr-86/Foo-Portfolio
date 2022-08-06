@@ -1,8 +1,8 @@
 import React from "react";
 import Title from "../Title";
-import { stackTitle, stackText } from "../../data/skills";
+import { stackTitle, stackText } from "../../data/stack";
 
-const MySkills = () => {
+const StackList = () => {
   const experience_title = `${stackTitle}`;
   return (
     <section className="section projects">
@@ -19,4 +19,4 @@ const MySkills = () => {
   );
 };
 
-export default MySkills;
+export default StackList;
