@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "gatsby";
-import Layout from "../components/Layout";
 import Footer from "../components/Footer";
 import text from "../data/text";
 
