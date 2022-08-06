@@ -1,8 +1,8 @@
 import React from "react";
 import Hero from "../components/Hero/index";
-import Services from "../components/Services/index";
+import ServiceList from "../components/Lists/ServiceList";
+import StackList from "../components/Lists/StackList";
 import AboutMe from "../components/AboutMe";
-import StackList from "../components/StackList";
 import ContactForm from "../components/ContactForm";
 import Footer from "../components/Footer";
 
@@ -17,7 +17,7 @@ export default function home() {
           <AboutMe />
         </div>
         <div id="experience">
-          <Services />
+          <ServiceList />
           <StackList />
         </div>
         <div id="contact">

@@ -1,6 +1,6 @@
 import React from "react";
-import Title from "../Title";
-import { stackTitle, stackText } from "../../data/stack";
+import Title from "../../Title";
+import { stackTitle, stackText } from "../../../data/stack";
 
 const StackList = () => {
   const experience_title = `${stackTitle}`;

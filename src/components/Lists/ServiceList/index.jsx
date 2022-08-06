@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "gatsby";
-import Title from "../Title";
-import text from "../../data/text";
-import serviceData from "../../data/services";
+import Title from "../../Title";
+import text from "../../../data/text";
+import serviceData from "../../../data/services";
 
-const Services = () => {
+const ServiceList = () => {
   const { services_title } = text;
   return (
     <section className="section bg-grey">
@@ -30,4 +30,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default ServiceList;
