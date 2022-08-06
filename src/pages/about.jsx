@@ -1,27 +1,15 @@
 import React from "react";
-import Title from "../components/Title/index";
-import text from "../data/text";
-import aboutImg from "../assets/images/about.jpg";
-
-const about = () => {
-  const { about_title, about_intro, about_experience, about_currently } = text;
-  const title = `${about_title}`;
-
+import AboutMe from "../components/AboutMe";
+const aboutPage = () => {
   return (
-    <>
-      <main>
-        <section className="section about-page">
-          <div className="section-center about-page">
-            <Title title={about_title} />
-            <p>{about_intro}</p>
-            <p>{about_experience}</p>
-            <p>{about_currently}</p>
-            <img src={aboutImg} alt={title} className="about-img" />
-          </div>
-        </section>
-      </main>
-    </>
+    <main>
+      <section className="section about-page">
+        <div className="section-center about-page">
+          <AboutMe />
+        </div>
+      </section>
+    </main>
   );
 };
 
-export default about;
+export default aboutPage;
