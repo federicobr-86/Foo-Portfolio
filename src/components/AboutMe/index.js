@@ -14,7 +14,7 @@ export default function AboutMe() {
           <p>{about_experience}</p>
           <p>{about_currently}</p>
           <StaticImage
-            src="../../assets/images/about.JPG"
+            src="../../images/about.JPG"
             alt="portfolio image of federico"
             className="about-img"
             placeholder="blurred"

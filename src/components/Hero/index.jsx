@@ -24,7 +24,7 @@ const Hero = () => {
           </div>
         </article>
         <StaticImage
-          src="../../assets/images/programming.svg"
+          src="../../images/programming.svg"
           alt="portfolio image of federico"
           className="hero-img"
           placeholder="blurred"

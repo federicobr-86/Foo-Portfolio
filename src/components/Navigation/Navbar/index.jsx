@@ -10,7 +10,7 @@ const Navbar = ({ toggleSidebar }) => {
         <div className="nav-header">
           <a href="/">
             <StaticImage
-              src="../../../assets/images/logo.png"
+              src="../../../images/logo.png"
               alt="Portfolio logo Foo Dev"
               className="nav-header img"
               placeholder="blurred"
