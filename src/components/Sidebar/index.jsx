@@ -1,6 +1,5 @@
 import React from "react";
 import links from "../../data/links";
-import socialLinks from "../../data/social_links";
 import { Link } from "gatsby";
 import { FaTimes } from "react-icons/fa";
 
@@ -18,17 +17,6 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 <Link to={link.url} onClick={toggleSidebar}>
                   {link.text}
                 </Link>
-              </li>
-            );
-          })}
-        </ul>
-        <ul className={isOpen ? "social-links sidebar-icons" : null}>
-          {socialLinks.map((link) => {
-            return (
-              <li key={link.id}>
-                <a href={link.url} className="social-link">
-                  {link.icon}
-                </a>
               </li>
             );
           })}
