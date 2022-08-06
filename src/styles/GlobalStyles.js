@@ -780,7 +780,6 @@ PAGES STYLES
   margin-bottom: 1.25rem;
   background: var(--clr-grey-10);
   border-radius: var(--radius);
-  text-transform: uppercase;
   letter-spacing: var(--spacing);
 }
 .form-control::placeholder {
