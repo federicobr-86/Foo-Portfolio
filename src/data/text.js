@@ -12,6 +12,8 @@ const text = {
     "Currently working as a Web Developer with React, Gatsby and Strapi.",
   contact_touch: "Get in touch!",
   contact_submit: "Submit here!",
+  contact_thanks: "Thank you for contacting me!",
+  contact_followUp: "I'll get in touch as soon as possible!",
   links_home: "home",
   links_home_url: "/",
   links_about: "about",
