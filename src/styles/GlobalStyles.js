@@ -403,12 +403,6 @@ p {
 .hero-img {
   display: none;
 }
-.hero-img-svg {
-  display: none;
-}
-.hero-img {
-  display: none;
-}
 .hero-info h4 {
   color: var(--clr-grey-5);
 }
@@ -424,7 +418,7 @@ p {
   .hero {
     margin-top: -1rem;
     padding-top: 1rem;
-    height: 40vh;
+    height: 50vh;
     background: var(--clr-primary-10);
     position: relative;
   }
