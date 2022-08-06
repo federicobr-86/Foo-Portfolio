@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-function SubmitButton({ text }) {
+function SubmitButton({ label }) {
   return (
     <>
       <button type="submit" className="submit-btn btn">
-        {text}
+        {label}
       </button>
     </>
   );
