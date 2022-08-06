@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import text from "../data/text";
 
-const Error = () => {
+const error = () => {
   const { not_found, go_back } = text;
 
   return (
@@ -19,4 +19,4 @@ const Error = () => {
   );
 };
 
-export default Error;
+export default error;

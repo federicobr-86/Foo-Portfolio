@@ -1,7 +1,7 @@
 import React from "react";
 import MySkills from "../components/Skills/index";
 
-const ExperiencePage = () => {
+const experiencePage = () => {
   return (
     <>
       <main>
@@ -13,4 +13,4 @@ const ExperiencePage = () => {
   );
 };
 
-export default ExperiencePage;
+export default experiencePage;
