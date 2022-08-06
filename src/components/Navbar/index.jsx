@@ -1,8 +1,8 @@
 import React from "react";
+import { Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 import { FaAlignRight } from "react-icons/fa";
 import pageLinks from "../../data/links";
-import { Link } from "gatsby";
-import logo from "../../assets/images/logo.svg";
 
 const Navbar = ({ toggleSidebar }) => {
   return (
@@ -10,7 +10,12 @@ const Navbar = ({ toggleSidebar }) => {
       <div className="nav-center">
         <div className="nav-header">
           <a href="/">
-            <img src={logo} alt="web developer logo" />
+            <StaticImage
+              src="../../assets/images/logo.png"
+              alt="Portfolio logo Foo Dev"
+              className="nav-header img"
+              placeholder="blurred"
+            />
           </a>
           <button type="button" className="toggle-btn" onClick={toggleSidebar}>
             <FaAlignRight />
