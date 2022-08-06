@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
-import social from "../../data/social_links";
+import SocialLinks from "../SocialLinks";
 import text from "../../data/text";
 
 const Hero = () => {
@@ -19,19 +19,7 @@ const Hero = () => {
           </Link>
           <div className="hero-centered">
             <div className="hero-social">
-              {social.map((link) => {
-                return (
-                  <a
-                    href={link.url}
-                    key={link.id}
-                    className="social-link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {link.icon}
-                  </a>
-                );
-              })}
+              <SocialLinks />
             </div>
           </div>
         </article>

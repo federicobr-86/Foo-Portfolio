@@ -1,18 +1,12 @@
 import React from "react";
-import socialLinks from "../../data/social_links";
+import SocialLinks from "../SocialLinks";
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div>
         <div className="footer-links social-links">
-          {socialLinks.map((link) => {
-            return (
-              <a href={link.url} key={link.id} className="social-link">
-                {link.icon}
-              </a>
-            );
-          })}
+          <SocialLinks />
         </div>
         <h4>
           copyright &copy; {new Date().getFullYear()}
