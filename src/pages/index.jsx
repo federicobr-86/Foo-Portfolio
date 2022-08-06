@@ -4,6 +4,7 @@ import ServiceList from "../components/Lists/ServiceList";
 import StackList from "../components/Lists/StackList";
 import AboutMe from "../components/AboutMe";
 import ContactForm from "../components/ContactForm";
+import endpoint from "../../endpoint";
 
 export default function home() {
   return (
@@ -20,7 +21,7 @@ export default function home() {
           <StackList />
         </div>
         <div id="contact">
-          <ContactForm />
+          <ContactForm mailTo={endpoint} />
         </div>
       </main>
     </>

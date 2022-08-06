@@ -1,12 +1,9 @@
 import React, { useState } from "react";
 import Title from "../Title";
 import SubmitButton from "../Buttons/SubmitButton";
-import endpoint from "../../../endpoint";
 import text from "../../data/text";
 
-const FORM_ENDPOINT = endpoint;
-
-const ContactForm = () => {
+function ContactForm({ mailTo }) {
   const { contact_title, contact_touch, contact_submit, contact_thanks } = text;
   const [submitted, setSubmitted] = useState(false);
   const handleSubmit = () => {
@@ -29,7 +26,7 @@ const ContactForm = () => {
         <article className="contact-form">
           <h3>{contact_touch}</h3>
           <form
-            action={FORM_ENDPOINT}
+            action={mailTo}
             onSubmit={handleSubmit}
             method="POST"
             target="_blank"
@@ -63,6 +60,6 @@ const ContactForm = () => {
       </section>
     </>
   );
-};
+}
 
 export default ContactForm;
