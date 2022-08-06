@@ -1,20 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import GlobalStyles from "../../styles/GlobalStyles";
-import Navbar from "../Navbar/index";
-import Sidebar from "../Sidebar/index";
+import Navigation from "../Navigation";
 
 const Layout = ({ children }) => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleSidebar = () => {
-    setIsOpen(!isOpen);
-  };
-
   return (
     <React.Fragment>
       <GlobalStyles />
-      <Navbar toggleSidebar={toggleSidebar} />
-      <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
+      <Navigation />
       {children}
     </React.Fragment>
   );

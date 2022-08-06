@@ -1,5 +1,5 @@
 import React from "react";
-import links from "../../data/links";
+import links from "../../../data/links";
 import { Link } from "gatsby";
 import { FaTimes } from "react-icons/fa";
 

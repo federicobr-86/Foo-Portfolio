@@ -2,7 +2,7 @@ import React from "react";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { StaticImage } from "gatsby-plugin-image";
 import { FaAlignRight } from "react-icons/fa";
-import pageLinks from "../../data/links";
+import pageLinks from "../../../data/links";
 
 const Navbar = ({ toggleSidebar }) => {
   return (
@@ -11,7 +11,7 @@ const Navbar = ({ toggleSidebar }) => {
         <div className="nav-header">
           <a href="/">
             <StaticImage
-              src="../../assets/images/logo.png"
+              src="../../../assets/images/logo.png"
               alt="Portfolio logo Foo Dev"
               className="nav-header img"
               placeholder="blurred"
