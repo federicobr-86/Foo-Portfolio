@@ -1,5 +1,6 @@
 import React from "react";
 import SocialLinks from "../SocialLinks";
+import Copyright from "./Copyright";
 
 const Footer = () => {
   return (
@@ -8,10 +9,7 @@ const Footer = () => {
         <div className="footer-links social-links">
           <SocialLinks />
         </div>
-        <h4>
-          copyright &copy; {new Date().getFullYear()}
-          <span> FooDev</span> all rights reserved
-        </h4>
+        <Copyright />
       </div>
     </footer>
   );
