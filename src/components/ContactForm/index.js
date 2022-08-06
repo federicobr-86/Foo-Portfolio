@@ -1,11 +1,12 @@
 import React, { useState } from "react";
+import Title from "../Title";
 import endpoint from "../../../endpoint";
 import text from "../../data/text";
 
 const FORM_ENDPOINT = endpoint;
 
 const ContactForm = () => {
-  const { contact_touch, contact_submit, contact_thanks } = text;
+  const { contact_title, contact_touch, contact_submit, contact_thanks } = text;
   const [submitted, setSubmitted] = useState(false);
   const handleSubmit = () => {
     setTimeout(() => {
@@ -23,6 +24,7 @@ const ContactForm = () => {
   return (
     <>
       <section className="contact-page">
+        <Title title={contact_title} />
         <article className="contact-form">
           <h3>{contact_touch}</h3>
           <form

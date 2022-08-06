@@ -10,6 +10,7 @@ const text = {
     "Since then, I became a highly motivated engineer with more than 10 years of experience in large scale projects.",
   about_currently:
     "Currently working as a Web Developer with React, Gatsby and Strapi.",
+  contact_title: "Contact Me!",
   contact_touch: "Get in touch!",
   contact_submit: "Submit here!",
   contact_thanks: "Thank you for contacting me!",
