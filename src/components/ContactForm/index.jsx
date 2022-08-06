@@ -61,10 +61,17 @@ function ContactForm({ title, mailTo, buttonLabel, response }) {
   );
 }
 
-SubmitButton.propTypes = {
+ContactForm.propTypes = {
+  title: PropTypes.string,
   mailTo: PropTypes.string.isRequired,
+  buttonLabel: PropTypes.string,
+  response: PropTypes.string,
 };
 
-SubmitButton.defaultProps = {};
+ContactForm.defaultProps = {
+  title: "Contact Form",
+  buttonLabel: "Submit",
+  response: "Thanks for Reaching Us",
+};
 
 export default ContactForm;

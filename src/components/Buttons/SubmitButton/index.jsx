@@ -12,11 +12,11 @@ function SubmitButton({ label }) {
 }
 
 SubmitButton.propTypes = {
-  text: PropTypes.string,
+  label: PropTypes.string,
 };
 
 SubmitButton.defaultProps = {
-  text: "",
+  label: "",
 };
 
 export default SubmitButton;

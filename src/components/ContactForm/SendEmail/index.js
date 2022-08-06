@@ -1,4 +1,5 @@
 import { useState } from "react";
+import PropTypes from "prop-types";
 
 const SendEmail = (endpointUrl) => {
   const [submitted, setSubmitted] = useState(false);
@@ -46,5 +47,11 @@ const SendEmail = (endpointUrl) => {
     sendEmail,
   };
 };
+
+SendEmail.propTypes = {
+  endpointUrl: PropTypes.string.isRequired,
+};
+
+SendEmail.defaultProps = {};
 
 export default SendEmail;
