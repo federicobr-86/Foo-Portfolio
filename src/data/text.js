@@ -42,7 +42,7 @@ const text = {
   skills_stack_project: "Project Management",
   hero_greeting: "Hello!",
   hero_title: "I'm Federico",
-  hero_description: "Frontend Developer",
+  hero_description: "Web Developer",
   hero_contact: "Contact Me!",
 };
 
