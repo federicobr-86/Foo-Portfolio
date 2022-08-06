@@ -4,7 +4,6 @@ import ServiceList from "../components/Lists/ServiceList";
 import StackList from "../components/Lists/StackList";
 import AboutMe from "../components/AboutMe";
 import ContactForm from "../components/ContactForm";
-import Footer from "../components/Footer";
 
 export default function home() {
   return (
@@ -24,7 +23,6 @@ export default function home() {
           <ContactForm />
         </div>
       </main>
-      <Footer />
     </>
   );
 }

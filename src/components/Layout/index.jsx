@@ -1,6 +1,7 @@
 import React from "react";
 import GlobalStyles from "../../styles/GlobalStyles";
 import Navigation from "../Navigation";
+import Footer from "../Footer";
 
 const Layout = ({ children }) => {
   return (
@@ -8,6 +9,7 @@ const Layout = ({ children }) => {
       <GlobalStyles />
       <Navigation />
       {children}
+      <Footer />
     </React.Fragment>
   );
 };
