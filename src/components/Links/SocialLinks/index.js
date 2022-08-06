@@ -1,5 +1,5 @@
 import React from "react";
-import socialLinks from "../../data/social_links";
+import socialLinks from "../../../data/social_links";
 
 function SocialLinks() {
   return (

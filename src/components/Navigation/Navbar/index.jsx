@@ -1,7 +1,7 @@
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import { FaAlignRight } from "react-icons/fa";
-import SectionLinks from "../SectionLinks";
+import SectionLinks from "../../Links/SectionLinks";
 
 const Navbar = ({ toggleSidebar }) => {
   return (

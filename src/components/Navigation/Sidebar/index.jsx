@@ -1,5 +1,5 @@
 import React from "react";
-import { AnchorLink } from "gatsby-plugin-anchor-links";
+import { Link } from "gatsby";
 import { FaTimes } from "react-icons/fa";
 import pageLinks from "../../../data/links";
 
@@ -14,9 +14,9 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
           {pageLinks.map((link) => {
             return (
               <li key={link.id}>
-                <AnchorLink to={link.url} onClick={toggleSidebar}>
+                <Link to={link.url} onClick={toggleSidebar}>
                   {link.text}
-                </AnchorLink>
+                </Link>
               </li>
             );
           })}
