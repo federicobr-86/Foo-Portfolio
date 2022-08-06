@@ -1,7 +1,7 @@
 import React from "react";
-import links from "../../../data/links";
-import { Link } from "gatsby";
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { FaTimes } from "react-icons/fa";
+import pageLinks from "../../../data/links";
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
   return (
@@ -11,12 +11,12 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
       </button>
       <div className="side-container">
         <ul className={isOpen ? "sidebar-links" : null}>
-          {links.map((link) => {
+          {pageLinks.map((link) => {
             return (
               <li key={link.id}>
-                <Link to={link.url} onClick={toggleSidebar}>
+                <AnchorLink to={link.url} onClick={toggleSidebar}>
                   {link.text}
-                </Link>
+                </AnchorLink>
               </li>
             );
           })}

@@ -1,8 +1,7 @@
 import React from "react";
-import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { StaticImage } from "gatsby-plugin-image";
 import { FaAlignRight } from "react-icons/fa";
-import pageLinks from "../../../data/links";
+import SectionLinks from "../SectionLinks";
 
 const Navbar = ({ toggleSidebar }) => {
   return (
@@ -22,15 +21,7 @@ const Navbar = ({ toggleSidebar }) => {
           </button>
         </div>
         <div className="nav-links">
-          {pageLinks.map((link) => {
-            return (
-              <AnchorLink
-                key={link.id}
-                to={link.url}
-                title={link.text}
-              ></AnchorLink>
-            );
-          })}
+          <SectionLinks />
         </div>
       </div>
     </nav>
