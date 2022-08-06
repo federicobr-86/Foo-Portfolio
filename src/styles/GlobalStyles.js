@@ -1,3 +1,6 @@
+import { createGlobalStyle } from "styled-components";
+
+const GlobalCSS = createGlobalStyle`
 /* Font Imports */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
 
@@ -801,3 +804,9 @@ PAGES STYLES
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
+
+
+
+`;
+
+export default GlobalCSS;
