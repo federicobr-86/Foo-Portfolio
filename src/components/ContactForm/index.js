@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Title from "../Title";
+import SubmitButton from "../Buttons/SubmitButton";
 import endpoint from "../../../endpoint";
 import text from "../../data/text";
 
@@ -56,9 +57,7 @@ const ContactForm = () => {
                 required
               ></textarea>
             </div>
-            <button type="submit" className="submit-btn btn">
-              {contact_submit}
-            </button>
+            <SubmitButton text={contact_submit}></SubmitButton>
           </form>
         </article>
       </section>
