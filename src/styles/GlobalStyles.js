@@ -137,8 +137,8 @@ p {
   border-radius: var(--radius);
 }
 .btn:hover {
-  color: var(--clr-primary-1);
-  background: var(--clr-primary-8);
+  color: white;
+  background: var(--clr-primary-4);
 }
 .center-btn {
   display: block;
