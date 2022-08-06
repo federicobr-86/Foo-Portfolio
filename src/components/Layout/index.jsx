@@ -3,7 +3,7 @@ import Navbar from "../Navbar/index";
 import Sidebar from "../Sidebar/index";
 import Footer from "../Footer/index";
 
-import "../../assets/layout.css";
+import "../../assets/css/layout.css";
 
 const Layout = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);

@@ -151,7 +151,7 @@ p {
 }
 
 .section-center {
-  width: 100vw;
+  width: 90vw;
   margin: 0 auto;
   max-width: 1170px;
 }
@@ -250,7 +250,7 @@ p {
   }
 }
 
-@media screen and (min-width: 1082px) {
+@media screen and (min-width: 2082px) {
   .navbar {
     background: transparent;
   }
@@ -677,6 +677,8 @@ PAGES STYLES
 */
 
 /*Pages Global Styles*/
+.error-page,
+.about-page,
 .contact-page {
   background: var(--clr-grey-10);
   min-height: calc(100vh - 5rem - 9rem);
