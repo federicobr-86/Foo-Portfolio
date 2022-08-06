@@ -1,3 +1,3 @@
 <h1 align="center">
-  My Frontend Portfolio with some Examples.
+  A React and Gatsby Portfolio.
 </h1>
