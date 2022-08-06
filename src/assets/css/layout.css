@@ -683,6 +683,10 @@ PAGES STYLES
   background: var(--clr-grey-10);
   min-height: calc(100vh - 5rem - 9rem);
 }
+.experience-page {
+  background: var(--clr-grey-10);
+  min-height: calc(100vh - 5rem - 9rem);
+}
 .error-page {
   display: grid;
   place-items: center;

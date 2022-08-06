@@ -5,8 +5,8 @@ const ExperiencePage = () => {
   return (
     <>
       <main>
-        <section className="projects-page">
-          <Experience title="all projects" />
+        <section className="experience-page">
+          <Experience />
         </section>
       </main>
     </>
