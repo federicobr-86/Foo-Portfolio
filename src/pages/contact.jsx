@@ -8,12 +8,14 @@ const contact = () => {
 
   return (
     <>
-      <ContactForm
-        titleText={contact_touch}
-        submitText={contact_submit}
-        submitThanks={contact_thanks}
-        submitResponse={contact_followUp}
-      ></ContactForm>
+      <main>
+        <ContactForm
+          titleText={contact_touch}
+          submitText={contact_submit}
+          submitThanks={contact_thanks}
+          submitResponse={contact_followUp}
+        ></ContactForm>
+      </main>
     </>
   );
 };

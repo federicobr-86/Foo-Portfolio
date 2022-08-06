@@ -9,15 +9,17 @@ const about = () => {
 
   return (
     <>
-      <section className="section about-page">
-        <div className="section-center about-page">
-          <Title title={about_title} />
-          <p>{about_intro}</p>
-          <p>{about_experience}</p>
-          <p>{about_currently}</p>
-          <img src={aboutImg} alt={title} className="about-img" />
-        </div>
-      </section>
+      <main>
+        <section className="section about-page">
+          <div className="section-center about-page">
+            <Title title={about_title} />
+            <p>{about_intro}</p>
+            <p>{about_experience}</p>
+            <p>{about_currently}</p>
+            <img src={aboutImg} alt={title} className="about-img" />
+          </div>
+        </section>
+      </main>
     </>
   );
 };
