@@ -1,3 +1,3 @@
 <h1 align="center">
-  A React and Gatsby Portfolio.
+  My Simple Portfolio using React & Gatsby.
 </h1>
