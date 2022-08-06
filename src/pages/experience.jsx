@@ -1,12 +1,12 @@
 import React from "react";
-import Experience from "../components/Experience/index";
+import MySkills from "../components/Skills/index";
 
 const ExperiencePage = () => {
   return (
     <>
       <main>
         <section className="experience-page">
-          <Experience />
+          <MySkills />
         </section>
       </main>
     </>
