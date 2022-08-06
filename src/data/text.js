@@ -3,7 +3,7 @@
 const text = {
   not_found: "Page not found!",
   go_back: "Let's go back home!",
-  about_title: "About myself!",
+  about_title: "About me:",
   about_intro:
     "Passionate about programming languages and computers since 1995.",
   about_experience:
@@ -11,7 +11,7 @@ const text = {
   about_currently:
     "Currently working as a Web Developer with React, Gatsby and Strapi.",
   contact_title: "Contact Me!",
-  contact_touch: "Get in touch!",
+  contact_touch: "Contact Form:",
   contact_submit: "Submit here!",
   contact_thanks: "Thank you for contacting me!",
   links_home: "home",
@@ -22,6 +22,7 @@ const text = {
   links_experience_url: "#experience",
   links_contact: "contact",
   links_contact_url: "#contact",
+  services_title: "My services:",
   services_web_title: "Frontend Web Developer",
   services_web_text: "Learn more about my Frontend Experience!",
   services_project_title: "Project Management",
