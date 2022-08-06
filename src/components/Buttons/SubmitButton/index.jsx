@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 function SubmitButton({ text }) {
   return (
@@ -9,5 +10,13 @@ function SubmitButton({ text }) {
     </>
   );
 }
+
+SubmitButton.propTypes = {
+  text: PropTypes.string,
+};
+
+SubmitButton.defaultProps = {
+  text: "",
+};
 
 export default SubmitButton;
