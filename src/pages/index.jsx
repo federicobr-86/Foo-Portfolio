@@ -3,6 +3,7 @@ import Hero from "../components/Hero/index";
 import Services from "../components/Services/index";
 import AboutMe from "../components/AboutMe";
 import StackList from "../components/StackList";
+import ContactForm from "../components/ContactForm";
 
 export default function home() {
   return (
@@ -12,6 +13,7 @@ export default function home() {
         <Services />
         <AboutMe />
         <StackList />
+        <ContactForm />
       </main>
     </>
   );
