@@ -1,4 +1,5 @@
 node_modules
+endpoint.js
 .cache
 public
 .gitignore

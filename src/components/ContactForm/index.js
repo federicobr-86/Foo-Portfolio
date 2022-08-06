@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import endpoint from "../../../endpoint";
 
-const FORM_ENDPOINT = "";
+const FORM_ENDPOINT = endpoint;
 
 const ContactForm = ({
   titleText,
