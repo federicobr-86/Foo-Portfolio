@@ -3,12 +3,7 @@ import endpoint from "../../../endpoint";
 
 const FORM_ENDPOINT = endpoint;
 
-const ContactForm = ({
-  titleText,
-  submitText,
-  submitThanks,
-  submitResponse,
-}) => {
+const ContactForm = ({ titleText, submitText, submitThanks }) => {
   const [submitted, setSubmitted] = useState(false);
   const handleSubmit = () => {
     setTimeout(() => {
@@ -17,10 +12,9 @@ const ContactForm = ({
   };
   if (submitted) {
     return (
-      <>
+      <section className="contact-page">
         <h2>{submitThanks}</h2>
-        <div>{submitResponse}</div>
-      </>
+      </section>
     );
   }
 
