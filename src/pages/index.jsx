@@ -7,9 +7,8 @@ import AboutMe from "../components/AboutMe";
 import ContactForm from "../components/ContactForm";
 import text from "../data/text";
 
-export default function home({ data }) {
+const Home = ({ data }) => {
   const { contact_title, contact_submit, contact_thanks } = text;
-  const endpoint = `${data.contentfulPortfolio.url}`;
 
   return (
     <>
@@ -27,7 +26,7 @@ export default function home({ data }) {
         <div id="contact">
           <ContactForm
             title={contact_title}
-            mailTo={endpoint}
+            mailTo={"endpoint"}
             buttonLabel={contact_submit}
             response={contact_thanks}
           />
@@ -35,12 +34,17 @@ export default function home({ data }) {
       </main>
     </>
   );
-}
+};
+
+export default Home;
 
 export const query = graphql`
   {
-    contentfulPortfolio {
-      url
+    allContentfulPortfolio {
+      nodes {
+        titles
+        url
+      }
     }
   }
 `;
