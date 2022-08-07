@@ -1,14 +1,15 @@
 import React from "react";
+import { graphql } from "gatsby";
 import Hero from "../components/Hero/index";
 import ServiceList from "../components/Lists/ServiceList";
 import StackList from "../components/Lists/StackList";
 import AboutMe from "../components/AboutMe";
 import ContactForm from "../components/ContactForm";
 import text from "../data/text";
-import endpoint from "../../endpoint";
 
-export default function home() {
+export default function home({ data }) {
   const { contact_title, contact_submit, contact_thanks } = text;
+  const endpoint = `${data.contentfulPortfolio.url}`;
 
   return (
     <>
@@ -35,3 +36,11 @@ export default function home() {
     </>
   );
 }
+
+export const query = graphql`
+  {
+    contentfulPortfolio {
+      url
+    }
+  }
+`;
