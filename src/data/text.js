@@ -3,17 +3,6 @@
 const text = {
   not_found: "Page not found!",
   go_back: "Let's go back home!",
-  about_title: "About me:",
-  about_intro:
-    "Passionate about programming languages and computers since 1995.",
-  about_experience:
-    "Since then, I became a highly motivated engineer with more than 10 years of experience in large scale projects.",
-  about_currently:
-    "Currently working as a Web Developer with React, Gatsby and Strapi.",
-  contact_title: "Contact Me!",
-  contact_touch: "Contact Form:",
-  contact_submit: "Submit here!",
-  contact_thanks: "Thank you for contacting me!",
   links_home: "home",
   links_home_url: "/",
   links_about: "about",
@@ -29,8 +18,6 @@ const text = {
   services_project_text:
     "Solid Experience in Large Scale Engineering Projects!",
   services_url: "#about",
-  social_linkedin: "https://linkedin.com/in/federico-barbagallo",
-  social_github: "https://github.com/federicobr-86",
   skills_stack_title: "Tech skills:",
   skills_stack_html: "HTML",
   skills_stack_css: "CSS",
@@ -42,10 +29,6 @@ const text = {
   skills_stack_git: "GIT",
   skills_stack_scrum: "Scrum",
   skills_stack_project: "Project Management",
-  hero_greeting: "Hello!",
-  hero_title: "I'm Federico",
-  hero_description: "Web Developer",
-  hero_contact: "Contact Me!",
 };
 
 export default text;
