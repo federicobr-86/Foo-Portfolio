@@ -1,26 +1,37 @@
 import React from "react";
-import LinkButton from "../Buttons/LinkButton";
+import { graphql, useStaticQuery } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
+import LinkButton from "../Buttons/LinkButton";
 import SocialLinks from "../Links/SocialLinks";
-import text from "../../data/text";
+import links from "../../data/links";
+
+export const query = graphql`
+  {
+    allContentfulHeroTitle {
+      nodes {
+        aboutTitle
+        id
+      }
+    }
+  }
+`;
 
 const Hero = () => {
+  const data = useStaticQuery(query);
   const {
-    hero_greeting,
-    hero_title,
-    hero_description,
-    hero_contact,
-    links_contact_url,
-  } = text;
+    allContentfulHeroTitle: { nodes: aboutTitle },
+  } = data;
+
+  const { links_contact_url } = links;
 
   return (
     <header className="hero">
       <section className="section-center hero-center">
         <article className="hero-info">
-          <h3>{hero_greeting}</h3>
-          <h2>{hero_title}</h2>
-          <h2>{hero_description}</h2>
-          <LinkButton label={hero_contact} link={links_contact_url} />
+          {aboutTitle.map((item) => {
+            return <h2 key={item.id}>{item.aboutTitle}</h2>;
+          })}
+          <LinkButton label="Contact!" link={links_contact_url} />
           <div className="hero-centered">
             <div className="hero-social">
               <SocialLinks />
