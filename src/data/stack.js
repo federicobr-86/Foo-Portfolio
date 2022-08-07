@@ -43,22 +43,18 @@ export const stackText = [
   },
   {
     id: 7,
-    title: `${skills_stack_rest}`,
-  },
-  {
-    id: 8,
     title: `${skills_stack_cms}`,
   },
   {
-    id: 9,
+    id: 8,
     title: `${skills_stack_git}`,
   },
   {
-    id: 10,
+    id: 9,
     title: `${skills_stack_scrum}`,
   },
   {
-    id: 11,
+    id: 10,
     title: `${skills_stack_project}`,
   },
 ];
