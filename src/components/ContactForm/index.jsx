@@ -1,11 +1,11 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 import Title from "../Title";
 import SubmitButton from "../Buttons/SubmitButton";
-import text from "../../data/text";
 
-function ContactForm({ mailTo }) {
-  const { contact_title, contact_touch, contact_submit, contact_thanks } = text;
+function ContactForm({ title, mailTo, buttonLabel, response }) {
   const [submitted, setSubmitted] = useState(false);
+
   const handleSubmit = () => {
     setTimeout(() => {
       setSubmitted(true);
@@ -14,7 +14,7 @@ function ContactForm({ mailTo }) {
   if (submitted) {
     return (
       <section className="contact-page">
-        <h2>{contact_thanks}</h2>
+        <h2>{response}</h2>
       </section>
     );
   }
@@ -22,9 +22,8 @@ function ContactForm({ mailTo }) {
   return (
     <>
       <section className="contact-page">
-        <Title title={contact_title} />
+        <Title title={title} />
         <article className="contact-form">
-          <h3>{contact_touch}</h3>
           <form
             action={mailTo}
             onSubmit={handleSubmit}
@@ -52,14 +51,27 @@ function ContactForm({ mailTo }) {
                 placeholder="message"
                 className="form-control"
                 required
-              ></textarea>
+              />
             </div>
-            <SubmitButton text={contact_submit}></SubmitButton>
+            <SubmitButton label={buttonLabel}></SubmitButton>
           </form>
         </article>
       </section>
     </>
   );
 }
+
+ContactForm.propTypes = {
+  title: PropTypes.string,
+  mailTo: PropTypes.string.isRequired,
+  buttonLabel: PropTypes.string,
+  response: PropTypes.string,
+};
+
+ContactForm.defaultProps = {
+  title: "Contact Form",
+  buttonLabel: "Submit",
+  response: "Thanks for Reaching Us",
+};
 
 export default ContactForm;

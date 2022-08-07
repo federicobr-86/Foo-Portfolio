@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Link } from "gatsby";
 import { FaTimes } from "react-icons/fa";
 import pageLinks from "../../../data/links";
@@ -25,5 +26,12 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
     </aside>
   );
 };
+
+Sidebar.propTypes = {
+  isOpen: PropTypes.bool.isRequired,
+  toggleSidebar: PropTypes.func.isRequired,
+};
+
+Sidebar.defaultProps = {};
 
 export default Sidebar;

@@ -20,7 +20,7 @@ const Hero = () => {
           <h3>{hero_greeting}</h3>
           <h2>{hero_title}</h2>
           <h2>{hero_description}</h2>
-          <LinkButton text={hero_contact} link={links_contact_url} />
+          <LinkButton label={hero_contact} link={links_contact_url} />
           <div className="hero-centered">
             <div className="hero-social">
               <SocialLinks />
