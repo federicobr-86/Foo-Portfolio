@@ -1,15 +1,11 @@
 import React from "react";
-import { graphql } from "gatsby";
 import Hero from "../components/Hero/index";
 import ServiceList from "../components/Lists/ServiceList";
 import StackList from "../components/Lists/StackList";
 import AboutMe from "../components/AboutMe";
 import ContactForm from "../components/ContactForm";
-import text from "../data/text";
 
-const Home = ({ data }) => {
-  const { contact_title, contact_submit, contact_thanks } = text;
-
+const Home = () => {
   return (
     <>
       <main>
@@ -24,12 +20,7 @@ const Home = ({ data }) => {
           <StackList />
         </div>
         <div id="contact">
-          <ContactForm
-            title={contact_title}
-            mailTo={"endpoint"}
-            buttonLabel={contact_submit}
-            response={contact_thanks}
-          />
+          <ContactForm />
         </div>
       </main>
     </>
@@ -37,14 +28,3 @@ const Home = ({ data }) => {
 };
 
 export default Home;
-
-export const query = graphql`
-  {
-    allContentfulPortfolio {
-      nodes {
-        titles
-        url
-      }
-    }
-  }
-`;
