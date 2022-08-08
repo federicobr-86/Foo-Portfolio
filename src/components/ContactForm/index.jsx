@@ -1,9 +1,34 @@
 import React, { useState } from "react";
-import PropTypes from "prop-types";
+import { graphql, useStaticQuery } from "gatsby";
 import Title from "../Title";
 import SubmitButton from "../Buttons/SubmitButton";
 
-function ContactForm({ title, mailTo, buttonLabel, response }) {
+const query = graphql`
+  {
+    contentfulContactFormTitle {
+      contactTitle
+    }
+    contentfulContactForm {
+      formTitle
+    }
+    contentfulContactResponse {
+      contactResponse
+    }
+    contentfulEmailData {
+      endPoint
+    }
+  }
+`;
+
+function ContactForm() {
+  const data = useStaticQuery(query);
+  const {
+    contentfulContactResponse: { contactResponse },
+    contentfulContactForm: { formTitle },
+    contentfulEmailData: { endPoint },
+    contentfulContactFormTitle: { contactTitle },
+  } = data;
+
   const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = () => {
@@ -14,7 +39,7 @@ function ContactForm({ title, mailTo, buttonLabel, response }) {
   if (submitted) {
     return (
       <section className="contact-page">
-        <h2>{response}</h2>
+        <h2>{contactResponse}</h2>
       </section>
     );
   }
@@ -22,10 +47,10 @@ function ContactForm({ title, mailTo, buttonLabel, response }) {
   return (
     <>
       <section className="contact-page">
-        <Title title={title} />
+        <Title title={formTitle} />
         <article className="contact-form">
           <form
-            action={mailTo}
+            action={endPoint}
             onSubmit={handleSubmit}
             method="POST"
             target="_blank"
@@ -53,25 +78,12 @@ function ContactForm({ title, mailTo, buttonLabel, response }) {
                 required
               />
             </div>
-            <SubmitButton label={buttonLabel}></SubmitButton>
+            <SubmitButton label={contactTitle}></SubmitButton>
           </form>
         </article>
       </section>
     </>
   );
 }
-
-ContactForm.propTypes = {
-  title: PropTypes.string,
-  mailTo: PropTypes.string.isRequired,
-  buttonLabel: PropTypes.string,
-  response: PropTypes.string,
-};
-
-ContactForm.defaultProps = {
-  title: "Contact Form",
-  buttonLabel: "Submit",
-  response: "Thanks for Reaching Us",
-};
 
 export default ContactForm;

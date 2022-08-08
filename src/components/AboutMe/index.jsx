@@ -1,18 +1,37 @@
 import React from "react";
+import { graphql, useStaticQuery } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
-import text from "../../data/text";
 import Title from "../Title";
 
-export default function AboutMe() {
-  const { about_title, about_intro, about_experience, about_currently } = text;
+const query = graphql`
+  {
+    allContentfulAboutMe {
+      nodes {
+        id
+        aboutText
+      }
+    }
+    contentfulAboutTitle {
+      aboutTitle
+    }
+  }
+`;
+
+function AboutMe() {
+  const data = useStaticQuery(query);
+  const {
+    allContentfulAboutMe: { nodes: aboutText },
+    contentfulAboutTitle: { aboutTitle },
+  } = data;
+
   return (
     <main>
       <section className="section about-page">
         <div className="section-center about-page">
-          <Title title={about_title} />
-          <p>{about_intro}</p>
-          <p>{about_experience}</p>
-          <p>{about_currently}</p>
+          <Title title={aboutTitle} />
+          {aboutText.map((item) => {
+            return <p key={item.id}>{item.aboutText}</p>;
+          })}
           <StaticImage
             src="../../images/about.JPG"
             alt="portfolio image of federico"
@@ -24,3 +43,5 @@ export default function AboutMe() {
     </main>
   );
 }
+
+export default AboutMe;
