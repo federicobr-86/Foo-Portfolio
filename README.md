@@ -1,9 +1,12 @@
-<h2 align="center">
+<h2 align="left">
   My Sample Portfolio using React, Gatsby and Contentful CMS.
 </h2>
-<h3 align="center">
+<h3 align="left">
   You can see a demo at: federico.lebarba.com
 </h3>
-<p align="center">
+<a href="https://federico.lebarba.com/" align="left">
+  federico.lebarba.com
+</a>
+<p align="left">
   Feel free to colaborate!
 </p>
