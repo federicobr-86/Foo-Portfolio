@@ -7,10 +7,9 @@ export const query = graphql`
     contentfulStackTitle {
       stackTitle
     }
-    allContentfulStack {
+    allContentfulStack(sort: { fields: id }) {
       nodes {
         StackList
-        id
       }
     }
   }

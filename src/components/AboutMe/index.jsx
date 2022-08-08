@@ -5,7 +5,7 @@ import Title from "../Title";
 
 const query = graphql`
   {
-    allContentfulAboutMe {
+    allContentfulAboutMe(sort: { fields: contentful_id }) {
       nodes {
         id
         aboutText
@@ -31,6 +31,8 @@ function AboutMe() {
   } = data;
 
   const aboutImage = getImage(myImage);
+
+  console.log(aboutText);
 
   return (
     <main>
