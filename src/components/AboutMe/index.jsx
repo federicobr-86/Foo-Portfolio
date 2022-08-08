@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import Title from "../Title";
 
 const query = graphql`
@@ -14,6 +14,11 @@ const query = graphql`
     contentfulAboutTitle {
       aboutTitle
     }
+    contentfulAboutImage {
+      myImage {
+        gatsbyImageData(height: 480)
+      }
+    }
   }
 `;
 
@@ -22,7 +27,10 @@ function AboutMe() {
   const {
     allContentfulAboutMe: { nodes: aboutText },
     contentfulAboutTitle: { aboutTitle },
+    contentfulAboutImage: { myImage },
   } = data;
+
+  const aboutImage = getImage(myImage);
 
   return (
     <main>
@@ -32,12 +40,7 @@ function AboutMe() {
           {aboutText.map((item) => {
             return <p key={item.id}>{item.aboutText}</p>;
           })}
-          <StaticImage
-            src="../../images/about.JPG"
-            alt="portfolio image of federico"
-            className="about-img"
-            placeholder="blurred"
-          />
+          <GatsbyImage image={aboutImage} alt="portfolio image of federico" />
         </div>
       </section>
     </main>
