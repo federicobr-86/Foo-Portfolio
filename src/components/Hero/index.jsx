@@ -25,7 +25,7 @@ const Hero = () => {
   const { links_contact_url } = links;
 
   return (
-    <header className="hero">
+    <header className="hero" id="home">
       <section className="section-center hero-center">
         <article className="hero-info">
           {aboutTitle.map((item) => {

@@ -26,7 +26,7 @@ function AboutMe() {
 
   return (
     <main>
-      <section className="section about-page">
+      <section className="section about-page" id="about">
         <div className="section-center about-page">
           <Title title={aboutTitle} />
           {aboutText.map((item) => {

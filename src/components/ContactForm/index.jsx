@@ -46,7 +46,7 @@ function ContactForm() {
 
   return (
     <>
-      <section className="contact-page">
+      <section className="contact-page" id="contact">
         <Title title={formTitle} />
         <article className="contact-form">
           <form
