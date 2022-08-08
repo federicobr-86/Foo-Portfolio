@@ -7,6 +7,6 @@
 <a href="https://federico.lebarba.com/" align="left">
   federico.lebarba.com
 </a>
-<p align="left">
-  Feel free to colaborate!
-</p>
+<h4 align="left">
+  Feel free to contact me!
+</h4>
