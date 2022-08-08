@@ -1,5 +1,10 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
+import {
+  StyledStackSection,
+  StyledStackList,
+  StyledStackCard,
+} from "./StackListStyles";
 import Title from "../../Title";
 
 export const query = graphql`
@@ -25,16 +30,16 @@ const StackList = () => {
   } = data;
 
   return (
-    <section className="section about-page">
-      <div className="section-center about-page">
-        <Title title={stackTitle} />
-        <div className="about-stack">
-          {StackList.map((item) => {
-            return <span key={item.id}>{item.StackList}</span>;
-          })}
-        </div>
-      </div>
-    </section>
+    <StyledStackSection>
+      <Title title={stackTitle} />
+      <StyledStackList>
+        {StackList.map((item) => {
+          return (
+            <StyledStackCard key={item.id}>{item.StackList}</StyledStackCard>
+          );
+        })}
+      </StyledStackList>
+    </StyledStackSection>
   );
 };
 
