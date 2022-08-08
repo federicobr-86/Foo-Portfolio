@@ -1,21 +1,34 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { StaticImage } from "gatsby-plugin-image";
+import { graphql, useStaticQuery } from "gatsby";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { FaAlignRight } from "react-icons/fa";
 import SectionLinks from "../../Links/SectionLinks";
 
+export const query = graphql`
+  {
+    contentfulLogoImage {
+      logoImage {
+        gatsbyImageData(height: 80, width: 200)
+      }
+    }
+  }
+`;
+
 const Navbar = ({ toggleSidebar }) => {
+  const data = useStaticQuery(query);
+  const {
+    contentfulLogoImage: { logoImage },
+  } = data;
+
+  const logo = getImage(logoImage);
+
   return (
     <nav className="navbar">
       <div className="nav-center">
         <div className="nav-header">
           <a href="/">
-            <StaticImage
-              src="../../../images/logo.png"
-              alt="Portfolio logo Foo Dev"
-              className="nav-header img"
-              placeholder="blurred"
-            />
+            <GatsbyImage image={logo} alt="Navigation bar Logo Foo Dev" />
           </a>
           <button type="button" className="toggle-btn" onClick={toggleSidebar}>
             <FaAlignRight />
