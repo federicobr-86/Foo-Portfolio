@@ -1,15 +1,13 @@
 import React from "react";
 import { Link } from "gatsby";
 import Title from "../../Title";
-import text from "../../../data/text";
 import serviceData from "../../../data/services";
 
 const ServiceList = () => {
-  const { services_title } = text;
   return (
     <section className="section bg-grey">
       <div className="service-title">
-        <Title title={services_title} />
+        <Title title="My Services:" />
       </div>
       <div className="section-center services-center">
         {serviceData.map((service) => {

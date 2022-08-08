@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "gatsby";
 import Footer from "../components/Footer";
-import text from "../data/text";
+import notFoundText from "../data/notFound";
 
 const error = () => {
-  const { not_found, go_back } = text;
+  const { not_found, go_back } = notFoundText;
 
   return (
     <main>
