@@ -8,5 +8,9 @@
   federico.lebarba.com
 </a>
 <h4 align="left">
-  Always a work in progress! Feel free to contact me!
+  Always a work in progress! 
 </h4>
+<h4 align="left">
+ Feel free to contact me if you have any suggestions!
+</h4>
+
