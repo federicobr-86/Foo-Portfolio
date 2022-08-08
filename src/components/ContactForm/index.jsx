@@ -47,7 +47,7 @@ function ContactForm() {
   return (
     <>
       <section className="contact-page" id="contact">
-        <Title title={formTitle} />
+        <Title title={contactTitle} />
         <article className="contact-form">
           <form
             action={endPoint}
@@ -78,7 +78,7 @@ function ContactForm() {
                 required
               />
             </div>
-            <SubmitButton label={contactTitle}></SubmitButton>
+            <SubmitButton label={formTitle}></SubmitButton>
           </form>
         </article>
       </section>

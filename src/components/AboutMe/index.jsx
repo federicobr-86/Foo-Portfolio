@@ -32,8 +32,6 @@ function AboutMe() {
 
   const aboutImage = getImage(myImage);
 
-  console.log(aboutText);
-
   return (
     <main>
       <section className="section about-page" id="about">
