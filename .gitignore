@@ -1,6 +1,5 @@
 node_modules
 public
-endpoint.js
 .cache
 .env*
 .gitignore
