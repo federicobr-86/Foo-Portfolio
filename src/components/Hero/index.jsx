@@ -3,7 +3,6 @@ import { graphql, useStaticQuery } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import LinkButton from "../Buttons/LinkButton";
 import SocialLinks from "../Links/SocialLinks";
-import links from "../../data/links";
 
 export const query = graphql`
   {
@@ -13,6 +12,9 @@ export const query = graphql`
         id
       }
     }
+    contentfulContactHero {
+      contactHeroLink
+    }
   }
 `;
 
@@ -20,9 +22,8 @@ const Hero = () => {
   const data = useStaticQuery(query);
   const {
     allContentfulHeroTitle: { nodes: aboutTitle },
+    contentfulContactHero: { contactHeroLink },
   } = data;
-
-  const { links_contact_url } = links;
 
   return (
     <header className="hero" id="home">
@@ -31,7 +32,7 @@ const Hero = () => {
           {aboutTitle.map((item) => {
             return <h2 key={item.id}>{item.aboutTitle}</h2>;
           })}
-          <LinkButton label="Contact!" link={links_contact_url} />
+          <LinkButton label="Contact!" link={contactHeroLink} />
           <div className="hero-centered">
             <div className="hero-social">
               <SocialLinks />
