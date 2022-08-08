@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { graphql, useStaticQuery } from "gatsby";
+import { StyledContactSection, StyledContactForm } from "./ContactFormStyles";
 import Title from "../Title";
 import SubmitButton from "../Buttons/SubmitButton";
 
@@ -46,9 +47,9 @@ function ContactForm() {
 
   return (
     <>
-      <section className="contact-page" id="contact">
+      <StyledContactSection id="contact">
         <Title title={formTitle} />
-        <article className="contact-form">
+        <StyledContactForm>
           <form
             action={endPoint}
             onSubmit={handleSubmit}
@@ -80,8 +81,8 @@ function ContactForm() {
             </div>
             <SubmitButton label={contactTitle}></SubmitButton>
           </form>
-        </article>
-      </section>
+        </StyledContactForm>
+      </StyledContactSection>
     </>
   );
 }
