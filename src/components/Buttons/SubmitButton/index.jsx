@@ -1,16 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { StyledSubmitButton } from "./SubmitButtonStyles";
 
 function SubmitButton({ label }) {
   return (
     <>
-      <button
+      <StyledSubmitButton
         type="submit"
-        className="submit-btn btn"
+        className="submit-btn"
         aria-label="Press to submit!"
       >
         {label}
-      </button>
+      </StyledSubmitButton>
     </>
   );
 }

@@ -1,15 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { StyledLinkButton } from "./LinkButtonStyles";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 function LinkButton({ label, link }) {
   return (
-    <AnchorLink
-      title={label}
-      to={link}
-      className="btn"
-      aria-label="Press to go to contact form!"
-    />
+    <StyledLinkButton>
+      <AnchorLink
+        title={label}
+        to={link}
+        aria-label="Press to go to contact form!"
+      />
+    </StyledLinkButton>
   );
 }
 
