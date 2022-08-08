@@ -2,7 +2,7 @@
   My Sample Portfolio using React, Gatsby and Contentful CMS.
 </h2>
 <h3 align="left">
-  You can see a demo at: federico.lebarba.com
+  You can see the demo at:
 </h3>
 <a href="https://federico.lebarba.com/" align="left">
   federico.lebarba.com
