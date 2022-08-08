@@ -4,7 +4,11 @@ import PropTypes from "prop-types";
 function SubmitButton({ label }) {
   return (
     <>
-      <button type="submit" className="submit-btn btn">
+      <button
+        type="submit"
+        className="submit-btn btn"
+        aria-label="Press to submit!"
+      >
         {label}
       </button>
     </>

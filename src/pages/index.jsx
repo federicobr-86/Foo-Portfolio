@@ -4,7 +4,7 @@ import Experience from "../components/Experience";
 import AboutMe from "../components/AboutMe";
 import ContactForm from "../components/ContactForm";
 
-const Home = () => {
+const home = () => {
   return (
     <>
       <main>
@@ -17,4 +17,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default home;

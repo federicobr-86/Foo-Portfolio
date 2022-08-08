@@ -24,11 +24,16 @@
     "gatsby-source-filesystem": "^4.16.0",
     "gatsby-transformer-remark": "^5.20.0",
     "gatsby-transformer-sharp": "^4.16.0",
+    "jpeg-js": "^0.4.4",
+    "moment": "^2.29.4",
+    "parse-url": "^8.0.0",
     "prop-types": "^15.8.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "react-helmet": "^6.1.0",
     "react-icons": "^4.4.0",
-    "styled-components": "^5.3.5"
+    "styled-components": "^5.3.5",
+    "terser": "^5.14.2"
   },
   "devDependencies": {
     "prettier": "^2.6.2"
