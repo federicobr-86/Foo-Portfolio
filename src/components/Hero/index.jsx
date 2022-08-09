@@ -32,7 +32,7 @@ const Hero = () => {
           {aboutTitle.map((item) => {
             return <h2 key={item.id}>{item.aboutTitle}</h2>;
           })}
-          <LinkButton label="Contact!" link={contactHeroLink} />
+          <LinkButton link={contactHeroLink} label="Contact!" tabindex="0" />
           <div className="hero-centered">
             <div className="hero-social">
               <SocialLinks />

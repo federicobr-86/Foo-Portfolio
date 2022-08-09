@@ -23,12 +23,12 @@ function SocialLinks() {
   const social = [
     {
       id: 1,
-      icon: <FaLinkedin className="social-icon"></FaLinkedin>,
+      icon: <FaLinkedin className="social-icon" tabindex="0"></FaLinkedin>,
       url: `${links}`,
     },
     {
       id: 2,
-      icon: <FaGithub className="social-icon"></FaGithub>,
+      icon: <FaGithub className="social-icon" tabindex="0"></FaGithub>,
       url: `${socialGit}`,
     },
   ];
