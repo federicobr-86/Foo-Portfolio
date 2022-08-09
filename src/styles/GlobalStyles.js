@@ -122,7 +122,7 @@ p {
 
 .btn {
   text-transform: uppercase;
-  background: var(--clr-primary-5);
+  background: var(--clr-primary-4);
   color: white;
   padding: 0.375rem 0.75rem;
   letter-spacing: var(--spacing);
@@ -138,7 +138,7 @@ p {
 }
 .btn:hover {
   color: white;
-  background: var(--clr-primary-4);
+  background: var(--clr-primary-5);
 }
 .center-btn {
   display: block;
@@ -597,8 +597,8 @@ About Page and Skill list
 
 .about-stack span {
   display: inline-block;
-  background: var(--clr-grey-9);
-  color: var(--clr-grey-5);
+  background: var(--clr-primary-4);
+  color: white;
   margin: 0.25rem;
   padding: 0.25rem 0.5rem;
   border-radius: var(--radius);
@@ -606,14 +606,13 @@ About Page and Skill list
   letter-spacing: 2px;
   font-size: 1rem;
   font-weight: bold;
-}
-.about-stack span {
   margin-top: 0.5rem;
+
 }
 
 .about-stack span:hover {
   color: white;
-  background: var(--clr-primary-2);
+  background: var(--clr-primary-5);
 }
 @media screen and (min-width: 576px) {
   .project-img {
@@ -625,7 +624,7 @@ About Page and Skill list
 
   .about-stack span:hover {
     color: white;
-    background: var(--clr-primary-2);
+  background: var(--clr-primary-5);
   }
 }
 @media screen and (min-width: 768px) {
@@ -635,7 +634,7 @@ About Page and Skill list
 
   .about-stack span:hover {
     color: white;
-    background: var(--clr-primary-2);
+  background: var(--clr-primary-5);
   }
 }
 @media screen and (min-width: 992px) {
