@@ -10,6 +10,7 @@ export const query = graphql`
     allContentfulStack(sort: { fields: id }) {
       nodes {
         StackList
+        id
       }
     }
   }
