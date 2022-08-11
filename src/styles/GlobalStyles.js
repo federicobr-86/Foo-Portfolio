@@ -93,7 +93,7 @@ p {
 }
 /*Media Queries for Text*/
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
   h1 {
     font-size: 4rem;
   }
@@ -158,7 +158,7 @@ p {
   margin: 0 auto;
   max-width: 1170px;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 769px) {
   .section-center {
     width: 95vw;
   }
@@ -227,7 +227,7 @@ p {
 
 /*Navbar Different media queries*/
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .toggle-btn {
     display: none;
   }
@@ -256,7 +256,7 @@ p {
   }
 }
 
-@media screen and (min-width: 1082px) {
+@media screen and (min-width: 769px) {
   .navbar {
     background: transparent;
   }
@@ -309,7 +309,7 @@ p {
   color: var(--clr-red-dark);
   cursor: pointer;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 769px) {
   .sidebar {
     transform: translateX(-100%);
   }
@@ -414,7 +414,7 @@ p {
 }
 
 /*Different media queries*/
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .hero {
     margin-top: -1rem;
     padding-top: 1rem;
@@ -449,7 +449,7 @@ p {
   }
 }
 
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 769px) {
   .hero::before {
     content: "";
     position: absolute;
@@ -483,7 +483,7 @@ p {
     justify-content: space-between;
   }
 }
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1025px) {
   .hero h4 {
     font-size: 1rem;
   }
@@ -551,7 +551,7 @@ Services
   background: var(--clr-primary-9);
   color: white;
 }
-@media screen and (min-width: 676px) {
+@media screen and (min-width: 768px) {
   .services-center {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -560,7 +560,7 @@ Services
     column-gap: 2rem;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 769px) {
   .services-center {
     grid-template-columns: 1fr 1fr;
   }
@@ -614,16 +614,13 @@ About Page and Skill list
   color: white;
   background: var(--clr-primary-5);
 }
-@media screen and (min-width: 576px) {
-  .project-img {
-    height: 19rem;
-  }
+@media screen and (min-width: 481px) {
   .about-stack span {
     margin-top: 0.5rem;
   }
 
   .about-stack span:hover {
-    color: white;
+  color: white;
   background: var(--clr-primary-5);
   }
 }
@@ -637,7 +634,7 @@ About Page and Skill list
   background: var(--clr-primary-5);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1025px) {
   .project {
     grid-template-columns: repeat(12, 1fr);
     align-items: center;
@@ -731,7 +728,7 @@ PAGES STYLES
   line-height: 2;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 769px) {
   .about-center {
     display: grid;
     place-items: center;
@@ -796,8 +793,6 @@ PAGES STYLES
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
-
-
 
 `;
 
