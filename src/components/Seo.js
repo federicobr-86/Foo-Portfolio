@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Helmet } from "react-helmet";
-import { useStaticQuery, graphql } from "gatsby";
 
 function Seo() {
   return (
@@ -10,7 +9,7 @@ function Seo() {
         <html lang="en" />
         <title>Title Coming soon...</title>
         <meta
-          name="description"
+          name="Portfolio Description"
           content="Content to be added by query soon..."
         />
       </Helmet>
@@ -18,6 +17,16 @@ function Seo() {
   );
 }
 
-Seo.propTypes = {};
+Seo.propTypes = {
+  lang: PropTypes.string,
+  title: PropTypes.string.isRequired,
+  meta: PropTypes.string.isRequired,
+};
+
+Seo.defaultProps = {
+  lang: `en`,
+  title: ``,
+  meta: "",
+};
 
 export default Seo;
