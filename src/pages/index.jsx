@@ -1,13 +1,15 @@
 import React from "react";
+import Seo from "../components/Seo";
 import Hero from "../components/Hero/index";
 import Experience from "../components/Experience";
 import AboutMe from "../components/AboutMe";
 import ContactForm from "../components/ContactForm";
 
-const home = () => {
+function Home() {
   return (
     <>
       <main>
+        <Seo />
         <Hero />
         <AboutMe />
         <Experience />
@@ -15,6 +17,6 @@ const home = () => {
       </main>
     </>
   );
-};
+}
 
-export default home;
+export default Home;
