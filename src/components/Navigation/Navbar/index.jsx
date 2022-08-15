@@ -5,9 +5,9 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { FaAlignRight } from "react-icons/fa";
 import SectionLinks from "../../Links/SectionLinks";
 
-export const query = graphql`
+const query = graphql`
   {
-    contentfulLogoImage {
+    contentfulImages {
       logoImage {
         gatsbyImageData(height: 80, width: 200)
       }
@@ -18,7 +18,7 @@ export const query = graphql`
 const Navbar = ({ toggleSidebar }) => {
   const data = useStaticQuery(query);
   const {
-    contentfulLogoImage: { logoImage },
+    contentfulImages: { logoImage },
   } = data;
 
   const logo = getImage(logoImage);
