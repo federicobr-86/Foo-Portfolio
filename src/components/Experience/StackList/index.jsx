@@ -4,7 +4,7 @@ import Title from "../../Title";
 
 export const query = graphql`
   {
-    contentfulStackTitle {
+    contentfulTitles {
       stackTitle
     }
     allContentfulStack(sort: { fields: id }) {
@@ -19,8 +19,7 @@ export const query = graphql`
 const StackList = () => {
   const data = useStaticQuery(query);
   const {
-    contentfulStackTitle: { stackTitle },
-
+    contentfulTitles: { stackTitle },
     allContentfulStack: { nodes: StackList },
   } = data;
 

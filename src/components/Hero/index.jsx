@@ -4,16 +4,12 @@ import { StaticImage } from "gatsby-plugin-image";
 import LinkButton from "../Buttons/LinkButton";
 import SocialLinks from "../Links/SocialLinks";
 
-export const query = graphql`
+const query = graphql`
   {
-    allContentfulHeroTitle {
+    allContentfulHeroInfo {
       nodes {
-        aboutTitle
-        id
+        heroInfo
       }
-    }
-    contentfulContactHero {
-      contactHeroLink
     }
   }
 `;
@@ -21,18 +17,19 @@ export const query = graphql`
 const Hero = () => {
   const data = useStaticQuery(query);
   const {
-    allContentfulHeroTitle: { nodes: aboutTitle },
-    contentfulContactHero: { contactHeroLink },
+    allContentfulHeroInfo: { nodes: heroInfo },
   } = data;
+
+  const contactURL = "#contact";
 
   return (
     <header className="hero" id="home">
       <section className="section-center hero-center">
         <article className="hero-info">
-          {aboutTitle.map((item) => {
-            return <h2 key={item.id}>{item.aboutTitle}</h2>;
+          {heroInfo.map((item) => {
+            return <h2 key={item.id}>{item.heroInfo}</h2>;
           })}
-          <LinkButton link={contactHeroLink} label="Contact!" tabIndex="0" />
+          <LinkButton link={contactURL} label="Contact!" tabIndex="0" />
           <div className="hero-centered">
             <div className="hero-social">
               <SocialLinks />
