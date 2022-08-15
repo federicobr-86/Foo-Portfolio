@@ -5,13 +5,11 @@ import SubmitButton from "../Buttons/SubmitButton";
 
 const query = graphql`
   {
-    contentfulContactFormTitle {
-      contactTitle
+    contentfulTitles {
+      contactFormTitle
     }
-    contentfulContactForm {
-      formTitle
-    }
-    contentfulContactResponse {
+    contentfulText {
+      contactButton
       contactResponse
     }
     contentfulEmailData {
@@ -23,10 +21,9 @@ const query = graphql`
 function ContactForm() {
   const data = useStaticQuery(query);
   const {
-    contentfulContactResponse: { contactResponse },
-    contentfulContactForm: { formTitle },
+    contentfulTitles: { contactFormTitle },
+    contentfulText: { contactButton, contactResponse },
     contentfulEmailData: { endPoint },
-    contentfulContactFormTitle: { contactTitle },
   } = data;
 
   const [submitted, setSubmitted] = useState(false);
@@ -47,7 +44,7 @@ function ContactForm() {
   return (
     <>
       <section className="contact-page" id="contact">
-        <Title title={contactTitle} />
+        <Title title={contactFormTitle} />
         <article className="contact-form">
           <form
             action={endPoint}
@@ -78,7 +75,7 @@ function ContactForm() {
                 required
               />
             </div>
-            <SubmitButton label={formTitle}></SubmitButton>
+            <SubmitButton label={contactButton}></SubmitButton>
           </form>
         </article>
       </section>
