@@ -2,13 +2,11 @@ import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 
-export const query = graphql`
+const query = graphql`
   {
-    contentfulLinks {
-      links
-    }
-    contentfulSocialGit {
-      socialGit
+    contentfulUrls {
+      linkedIn
+      gitHub
     }
   }
 `;
@@ -16,20 +14,19 @@ export const query = graphql`
 function SocialLinks() {
   const data = useStaticQuery(query);
   const {
-    contentfulLinks: { links },
-    contentfulSocialGit: { socialGit },
+    contentfulUrls: { linkedIn, gitHub },
   } = data;
 
   const social = [
     {
       id: 1,
       icon: <FaLinkedin className="social-icon" tabIndex="0"></FaLinkedin>,
-      url: `${links}`,
+      url: `${linkedIn}`,
     },
     {
       id: 2,
       icon: <FaGithub className="social-icon" tabIndex="0"></FaGithub>,
-      url: `${socialGit}`,
+      url: `${gitHub}`,
     },
   ];
 
