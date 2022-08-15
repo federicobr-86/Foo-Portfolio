@@ -1,13 +1,18 @@
 import React from "react";
 import { Link } from "gatsby";
 import { graphql, useStaticQuery } from "gatsby";
+import { FaCode, FaUserTie } from "react-icons/fa";
 import Title from "../../Title";
-import serviceData from "../../../data/services";
 
 const query = graphql`
   {
     contentfulTitles {
       serviceTitle
+      serviceFront
+      serviceProject
+    }
+    contentfulText {
+      serviceDescription
     }
   }
 `;
@@ -15,8 +20,12 @@ const query = graphql`
 const ServiceList = () => {
   const data = useStaticQuery(query);
   const {
-    contentfulTitles: { serviceTitle },
+    contentfulTitles: { serviceTitle, serviceFront, serviceProject },
+    contentfulText: { serviceDescription },
   } = data;
+
+  const serviceURL = "#about";
+  const [frontDescription, projectDescription] = serviceDescription;
 
   return (
     <section className="section bg-grey">
@@ -24,19 +33,23 @@ const ServiceList = () => {
         <Title title={serviceTitle} />
       </div>
       <div className="section-center services-center">
-        {serviceData.map((service) => {
-          const { id, icon, title, text, url } = service;
-          return (
-            <article key={id} className="service">
-              {icon}
-              <Link to={url}>
-                <h4>{title}</h4>
-                <div className="underline"></div>
-                <p>{text}</p>
-              </Link>
-            </article>
-          );
-        })}
+        <article className="service">
+          <FaCode className="service-icon" />
+          <Link to={serviceURL}>
+            <h4>{serviceFront}</h4>
+            <div className="underline"></div>
+            <p>{frontDescription}</p>
+          </Link>
+        </article>
+
+        <article className="service">
+          <FaUserTie className="service-icon" />
+          <Link to={serviceURL}>
+            <h4>{serviceProject}</h4>
+            <div className="underline"></div>
+            <p>{projectDescription}</p>
+          </Link>
+        </article>
       </div>
     </section>
   );
