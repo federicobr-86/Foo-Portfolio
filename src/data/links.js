@@ -15,7 +15,7 @@ const links = [
     url: "#experience",
   },
   {
-    id: 5,
+    id: 4,
     text: "contact",
     url: "#contact",
   },
